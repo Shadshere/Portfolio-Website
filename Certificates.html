@@ -1,130 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amirul Arshad | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #ece9e6, #ffffff);
-            color: #333;
-            transition: background 0.3s, color 0.3s;
-        }
-        header {
-            background: #1e1e2f;
-            color: #fff;
-            padding: 40px 0 20px;
-            text-align: center;
-        }
-        header img {
-            width: 120px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            border: 4px solid #fff;
-            transition: transform 0.3s;
-        }
-        header img:hover {
-            transform: scale(1.05);
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00bcd4;
-        }
-        .container {
-            max-width: 960px;
-            margin: 40px auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-            padding: 40px 30px;
-            transition: background 0.3s, color 0.3s;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        h2 {
-            font-size: 26px;
-            margin-bottom: 20px;
-            border-left: 5px solid #00bcd4;
-            padding-left: 10px;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        .project-card {
-            background: #f7f9fc;
-            border-left: 4px solid #00bcd4;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s, background 0.3s, color 0.3s;
-        }
-        .project-card:hover {
-            background: #1e1e2f;
-            color: #eee;
-            transform: translateY(-5px);
-        }
-        .project-card a {
-            color: #00bcd4;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background: #00bcd4;
-            color: white;
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            background: #1e1e2f;
-            color: #fff;
-        }
-        ul li {
-            list-style: none;
-            margin-bottom: 10px;
-        }
-        a {
-            color: #00bcd4;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px 15px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amirul Arshad | Certificates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid #fff;
+      transition: transform 0.3s;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      border-left: 5px solid #00bcd4;
+      padding-left: 10px;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .certificate-card {
+      background: #f7f9fc;
+      border-left: 4px solid #00bcd4;
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.3s, background 0.3s, color 0.3s;
+    }
+
+    .certificate-card:hover {
+      background: #1e1e2f;
+      color: #eee;
+      transform: translateY(-5px);
+    }
+
+    .certificate-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .certificate-org {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .certificate-desc {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .certificate-card:hover .certificate-org {
+      color: #ccc;
+    }
+
+    .certificate-link {
+      font-size: 14px;
+      color: #00bcd4;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .certificate-link:hover {
+      text-decoration: underline;
+    }
+
+    .year-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #1e1e2f;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #00bcd4;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="https://i.pravatar.cc/200?img=3" alt="Amirul Arshad">
-        <h1>Amirul Arshad</h1>
-        <p>Web Developer & Designer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <img src="https://i.pravatar.cc/200?img=3" alt="Amirul Arshad" />
+    <h1>Amirul Arshad</h1>
+    <p>Web Developer & Designer</p>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="Resume.html">Resume</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Skills.html">Skills</a>
+      <a href="Certificates.html">Certificates</a>
+      <a href="Contacts.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="certificate-card">
+        <div class="year-badge">2022</div>
+        <div class="certificate-title">Full Stack Web Development</div>
+        <div class="certificate-org">Udemy</div>
+        <div class="certificate-desc">Comprehensive course covering front-end and back-end development technologies.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="year-badge">2021</div>
+        <div class="certificate-title">React - The Complete Guide</div>
+        <div class="certificate-org">Coursera</div>
+        <div class="certificate-desc">Advanced React concepts including hooks, context API, and Redux.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="year-badge">2020</div>
+        <div class="certificate-title">UI/UX Design Specialization</div>
+        <div class="certificate-org">Google</div>
+        <div class="certificate-desc">Training in user interface and user experience design principles.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="year-badge">2019</div>
+        <div class="certificate-title">Advanced JavaScript</div>
+        <div class="certificate-org">freeCodeCamp</div>
+        <div class="certificate-desc">Deep dive into closures, prototypes, async programming, and more.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="year-badge">2019</div>
+        <div class="certificate-title">Responsive Web Design</div>
+        <div class="certificate-org">LinkedIn Learning</div>
+        <div class="certificate-desc">Creating websites that work across all devices and screen sizes.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="certificate-card">
+        <div class="year-badge">2018</div>
+        <div class="certificate-title">Node.js Masterclass</div>
+        <div class="certificate-org">Udacity</div>
+        <div class="certificate-desc">Build scalable server-side applications with Node.js and Express.</div>
+        <a href="#" class="certificate-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Amirul Arshad. All rights reserved.
+  </footer>
+</body>
+</html>
